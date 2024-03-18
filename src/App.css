@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  background-color: #121212;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.keyboard-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 80%;
+  /* margin-top: 10px; */
+}
+
+.line1 {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.line2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+.line3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+.line4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:5px;
+}
+
+.key {
+  width: 55px;
+  height: 55px;
+  margin: 7px;
+  border:2.5px solid rgb(112, 108, 108);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  background-color: #121212;
+  color: rgb(224, 219, 219);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.space{
+    width: 400px;
+    height: 55px;
+    margin: 7px;
+    border:2.5px solid rgb(112, 108, 108);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    background-color: #121212;
+    color: rgb(224, 219, 219);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.activekey{
+  background-color: rgb(112, 109, 109);
+  animation: 0.8s linear 0s infinite normal both running vibrate-1;
+}
+
+@keyframes vibrate-1 {
+    0% {
+        transform: translate(0px);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+
+}
+
+.accuracy{
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(187, 134, 252);;
+}
+.correct-count{
+  color:rgb(29, 107, 29);
+}
+.incorrect-count{
+  color:rgb(177, 43, 43);
+}
+
+.green{
+  background-color:rgb(9, 94, 9);
+}
+.red{
+
+  background-color:rgb(148, 27, 27);
+}
